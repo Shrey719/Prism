@@ -1,6 +1,5 @@
-//remake - should unfuck it slightly more - posions fetcher instead of the actual thing
+// posions slightly diff now
 (function() {
-// i belive we call this random bullshit
 function randomPixelData() {
     return Math.floor(Math.random() * 256); // inclusive, exclusive
 }
