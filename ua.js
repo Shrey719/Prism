@@ -1,3 +1,5 @@
+
+// this wont work on mv2 but google can suck my dick because its not happening
 let platforms = [
     "Linux",
     "Linux aarch64",

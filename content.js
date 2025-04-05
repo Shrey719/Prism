@@ -1,9 +1,6 @@
 function injectS(file) {
     const script = document.createElement("script");
     script.src = chrome.runtime.getURL(file);
-    script.onload = function() {
-        this.remove();
-    };
     document.documentElement.appendChild(script);
 }
 // chrome santisation is 100% safe 

@@ -41,7 +41,7 @@ function hookGetContext() {
             } else if (type === "webgl" || type === "webgl2" || type === "experimental-webgl") {
                 hookReadPixels(ctx); 
             } else {
-                // if all else fails just fuck up both 
+                // if all else fails, just nuke them both 
                 hookGetImageData(ctx)
                 hookReadPixels(ctx);
             }
