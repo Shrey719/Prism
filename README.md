@@ -11,3 +11,5 @@
 -> User agent randomization     
 -> Swapping some features of navigator      
 -> Canvas and webgl randomization     
+
+Join the discord! https://discord.gg/YWKgdAqc
