@@ -1,0 +1,16 @@
+{
+  "name": "Prism",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "An extension built to destroy the cookie-based tracking",
+  "permissions": [
+    "cookies",
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
