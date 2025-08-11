@@ -4,14 +4,11 @@ const domainHandler = {
   'doubleclick.net': handleDoubleClick,
 };
 
-const lastRunMap = new Map();
-
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete' && tab.url && tab.url.startsWith('http')) {
     const url = new URL(tab.url);
     const hostname = url.hostname.toLowerCase();
 
-    // Find matching domain policy for hostname or any parent domain
     const matchedDomain = Object.keys(domainHandler).find(domain => 
       hostname === domain || hostname.endsWith(`.${domain}`)
     );
